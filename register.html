@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Registration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .registration-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      background-image: url("logo2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 40px;
+      width: 400px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 50px;
+      color: #1DA1F2;
+      margin-bottom: 20px;
+    }
+
+    .registration-form h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #657786;
+    }
+
+    .input-group input:focus {
+      border-color: #1DA1F2;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #1DA1F2;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .signup-btn:hover {
+      background-color: #1A91DA;
+    }
+
+    .links {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #1DA1F2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      .registration-box {
+        width: 90%;
+        padding: 30px;
+      }
+
+      .logo {
+        font-size: 40px;
+      }
+
+      .registration-form h1 {
+        font-size: 22px;
+      }
+
+      .input-group input {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .signup-btn {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .registration-box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .logo {
+        font-size: 35px;
+      }
+
+      .registration-form h1 {
+        font-size: 20px;
+      }
+
+      .input-group input {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .signup-btn {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .links {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="registration-box">
+      
+      <div class="logo">
+        <i class="fab fa-twitter"></i>
+      </div>
+
+      <form class="registration-form">
+        <h1 style="color: #1DA1F2;">Create your account</h1>
+
+        <div class="input-group">
+          <input type="text" id="name" placeholder="Name" required>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="phone-email" placeholder="Phone or email" required>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="input-group">
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" required>
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <div class="links">
+          <a href="login.html">Already have an account? Log in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

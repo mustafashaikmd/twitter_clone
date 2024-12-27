@@ -1,0 +1,252 @@
+body{
+    background-color: black;
+    font-family: "Rubik", sans-serif;
+}
+.container {
+    display: flex;
+    height: 90vh;
+}
+img{
+    width: 100%;
+    margin-top: 15%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    flex: 1; 
+    padding: 1px;
+    box-sizing: border-box;
+}
+.content{
+    flex: 1;
+    width: 500px;
+    height: 400px;
+    box-sizing: content-box;
+}
+h1{
+    margin-left: 60px;
+    margin-top: 80px;
+    font-weight: 900;
+    color: white;
+    font-size: 64px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    margin-left: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 31px;
+    font-weight: 600;
+}
+.text{
+    margin-left: 60px;
+    font-size: 11px;
+    color: #71767b;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text a{
+    text-decoration: none;
+    color: #1d98f0;
+}
+.line-with-text {
+    display: flex;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    width: 370px;
+}
+
+.line-with-text::before,
+.line-with-text::after {
+    content: '';
+    margin-left: 60px;
+    flex: 1;
+    border-bottom: 1px solid white;
+    opacity: 0.3;
+}
+
+.line-with-text:not(:empty)::before {
+    margin-right: 1px;
+}
+
+.line-with-text:not(:empty)::after {
+    margin-left: 1px;
+}
+.btn-container {
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    max-width: 320px; 
+    margin: 1px; 
+    
+}
+
+.btn
+{
+    margin-left: 60px;
+    border-radius: 20px;
+    font-weight: 550;
+    width: 320px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn img{
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 45px;
+    margin-left: 55px;
+    padding: 3px;
+}
+.btn + .btn {
+    margin-top: 20px; 
+  }
+.btn-c {
+    margin-left: 60px;
+    border-radius: 20px;
+    font-weight: 550;
+    align-items: center;
+    font-family: inherit;
+    width: 320px;
+    height: 40px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.text1{
+    margin-left: 60px;
+    font-size: 17px;
+    color: #e7e9ea;
+}
+.signin{
+    font-weight: 550;
+    margin-left: 60px;
+    border-radius: 20px;
+    width: 320px;
+    height: 40px;
+    display: inline;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid white;
+    background-color: black;
+    color: #1d9bf0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer{
+    color: #71767b;
+    font-size: 10px;
+    align-items: center;
+}
+footer a{
+    display: inline flex;
+    justify-content: space-between;
+    margin: 8px;
+    text-decoration: none;
+    color: #71767b;
+    font-size: 13px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer p{
+    text-decoration: none;
+    display: inline;
+    margin: 45%;
+    align-items: center;
+    font-size: 13px;
+    color: #71767b;
+    font-weight: 100;
+}
+
+.signin {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .btn, .btn-c, .signin {
+        width: 100%;
+        margin: 5px 0;
+        padding: 12px;
+    }
+
+    .btn img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .btn a {
+        font-size: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .line-with-text {
+        margin: 10px 0;
+    }
+}
+
+/* Extra small devices (Phones) */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.2rem;
+    }
+
+    .btn, .btn-c, .signin {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

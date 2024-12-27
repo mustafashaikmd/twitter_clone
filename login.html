@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      /* background-image: url("logo2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .login-box {
+      color: white;
+      background-image: url("logo2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 40px;
+      width: 400px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 50px;
+      color: #1DA1F2;
+      margin-bottom: 20px;
+    }
+
+    .login-form h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: #1DA1F2;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #1DA1F2;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #1A91DA;
+    }
+
+    .links {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .links a {
+      color: #1DA1F2;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .links span {
+      margin: 0 5px;
+      color: #555;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+      .login-box {
+        width: 90%;
+        padding: 30px;
+      }
+
+      .logo {
+        font-size: 40px;
+      }
+
+      .login-form h1 {
+        font-size: 22px;
+      }
+
+      .input-group input {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      .login-btn {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .login-box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .logo {
+        font-size: 35px;
+      }
+
+      .login-form h1 {
+        font-size: 20px;
+      }
+
+      .input-group input {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .login-btn {
+        font-size: 12px;
+        padding: 8px;
+      }
+
+      .links {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="login-box">
+      
+      <div class="logo">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <form class="login-form">
+        <h1 style="color: rgb(5, 189, 245); font-weight: 900;">Sign In</h1>
+        
+        <div class="input-group">
+          <input type="text" id="username" placeholder="Phone, email, or username" required>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="login-btn">Log in</button>
+
+        <div class="links">
+          <a href="#">Forgot password?</a>
+          <span>•</span>
+          <a href="register.html">Sign up for Twitter</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
